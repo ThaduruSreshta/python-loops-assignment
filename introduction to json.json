@@ -1,0 +1,23 @@
+#task 1
+import json
+user_details={"name":"alice","age":20,"email":"alice20@gmail,com","skills":["SQL","Javascript"],"is_active":True}
+json.dumps(user_details)
+#task 2
+# import json
+details={"status": "success", "data": {"user_id": 101, "username": "alex99", "score": 87.5}}
+username=details["data"]["username"]
+score=details["data"]["score"]
+print(f"user {username} scored {score} points")
+#task3
+data={
+  "name": "Priya",
+  "address": {
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "zip": "560001",
+    "country":"India"
+  }
+}
+print(f"city is{data["address"]["city"]} and the zipcode is{data["address"]["zip"]}\n")
+print(f"the data after adding country is\n{data}")
+
